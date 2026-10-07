@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mukesh - Resume</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+            background: #eee;
+            font-size: 10px;
+            line-height: 1.35;
+        }
+
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 10px auto;
+            padding: 14mm;
+            background: white;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #222;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+
+        header img {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 50%;
+            float: right;
+            margin-top: -60px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 25px;
+            letter-spacing: 1px;
+        }
+
+        header h2 {
+            margin: 3px 0;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .contact {
+            margin-top: 5px;
+            font-size: 9px;
+        }
+
+        .contact a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 32% 68%;
+            gap: 15px;
+        }
+
+        .left {
+            border-right: 1px solid #ccc;
+            padding-right: 12px;
+        }
+
+        .right {
+            padding-left: 2px;
+        }
+
+        section {
+            margin-bottom: 9px;
+        }
+
+        h3 {
+            margin: 0 0 4px 0;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #333;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h4 {
+            margin: 4px 0 1px;
+            font-size: 10.5px;
+        }
+
+        p {
+            margin: 2px 0;
+        }
+
+        ul {
+            margin: 3px 0 0 15px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 2px;
+        }
+
+        .skills p {
+            margin: 4px 0;
+        }
+
+        .project {
+            margin-bottom: 7px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            font-size: 10.5px;
+        }
+
+        .date {
+            font-style: italic;
+            font-size: 9px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 8px;
+            font-size: 8px;
+            border-top: 1px solid #ccc;
+            padding-top: 5px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .resume {
+                margin: 0;
+                width: 210mm;
+                min-height: 297mm;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <header>
+        <h1>MUKESH</h1>
+        <h2>Software Developer | Python | SQL | Web Development</h2>
+
+        <div class="contact">
+            📞 +91 98765 43210 |
+            ✉️ <a href="mailto:mukesh@example.com">mukesh@example.com</a> |
+            📍 Coimbatore, Tamil Nadu, India
+            <br>
+            🔗 linkedin.com/in/mukesh |
+            🔗 github.com/mukesh
+        </div>
+
+        <img src="https://i.pinimg.com/236x/d1/d4/63/d1d46381d3c104837c94190352b4186b.jpg"
+             alt="Mukesh Photo">
+    </header>
+
+    <div class="container">
+
+        <!-- LEFT COLUMN -->
+        <aside class="left">
+
+            <section>
+                <h3>Profile</h3>
+                <p>
+                    Motivated Computer Science graduate with knowledge of
+                    Python, SQL, web development and data analysis. Interested
+                    in building practical software solutions.
+                </p>
+            </section>
+
+            <section class="skills">
+                <h3>Technical Skills</h3>
+
+                <p><strong>Programming:</strong><br>
+                Python, Java, C</p>
+
+                <p><strong>Database:</strong><br>
+                MySQL, SQL</p>
+
+                <p><strong>Web:</strong><br>
+                HTML, CSS, JavaScript</p>
+
+                <p><strong>Tools:</strong><br>
+                Git, GitHub, VS Code</p>
+
+                <p><strong>Other:</strong><br>
+                Data Analysis, MS Office</p>
+            </section>
+
+            <section>
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                    <li>Time Management</li>
+                    <li>Quick Learning</li>
+                    <li>Adaptability</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Languages</h3>
+                <p>English – Professional</p>
+                <p>Tamil – Native</p>
+            </section>
+
+            <section>
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Python Programming – Coursera</li>
+                    <li>SQL for Beginners – Udemy</li>
+                    <li>Introduction to Data Science – IBM</li>
+                </ul>
+            </section>
+
+        </aside>
+
+
+        <!-- RIGHT COLUMN -->
+        <main class="right">
+
+            <section>
+                <h3>Education</h3>
+
+                <h4>Bachelor of Computer Applications (BCA)</h4>
+                <p>ABC College of Arts and Science, Coimbatore</p>
+                <p class="date">2023 – 2026 | CGPA: 8.2/10</p>
+
+                <h4>Higher Secondary Education</h4>
+                <p>XYZ Higher Secondary School, Coimbatore</p>
+                <p class="date">2022 – 2023 | Percentage: 82%</p>
+            </section>
+
+
+            <section>
+                <h3>Projects</h3>
+
+                <div class="project">
+                    <div class="project-title">
+                        Bakery Management System
+                    </div>
+
+                    <p><strong>Python | MySQL</strong></p>
+
+                    <ul>
+                        <li>
+                            Developed a system to manage products, customers,
+                            orders and inventory.
+                        </li>
+                        <li>
+                            Created SQL tables and queries for efficient
+                            database management.
+                        </li>
+                        <li>
+                            Implemented CRUD operations using Python and SQL.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <div class="project-title">
+                        Student Management System
+                    </div>
+
+                    <p><strong>Python | MySQL</strong></p>
+
+                    <ul>
+                        <li>
+                            Developed an application for managing student
+                            records.
+                        </li>
+                        <li>
+                            Implemented add, update, search and delete
+                            functionality.
+                        </li>
+                        <li>
+                            Designed a structured SQL database.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section>
+                <h3>Internship</h3>
+
+                <h4>Python Developer Intern</h4>
+
+                <p>
+                    <strong>ABC Technologies, Coimbatore</strong>
+                </p>
+
+                <p class="date">
+                    June 2025 – August 2025
+                </p>
+
+                <ul>
+                    <li>
+                        Assisted in developing Python-based applications.
+                    </li>
+                    <li>
+                        Worked with SQL databases and data processing.
+                    </li>
+                    <li>
+                        Participated in debugging and software testing.
+                    </li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h3>Interests</h3>
+
+                <p>
+                    Software Development • Data Science • Technology •
+                    Problem Solving
+                </p>
+            </section>
+
+
+            <section>
+                <h3>Declaration</h3>
+
+                <p>
+                    I hereby declare that the information provided above is
+                    true and correct to the best of my knowledge.
+                </p>
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer>
+        © 2026 Mukesh | Resume
+    </footer>
+
+</div>
+
+</body>
+</html>
